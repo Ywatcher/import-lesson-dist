@@ -9,6 +9,9 @@ import importlib
 exec(open('assignment/assignment.py').read())
 
 
+
+
+
 class TestImport(unittest.TestCase):
     @weight(1)
     def test_import_1(self):
