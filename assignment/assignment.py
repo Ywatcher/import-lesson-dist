@@ -1,4 +1,4 @@
-# create a new subdirectory `assignment.subdir1.subdir2.file3.py` and move this 
+# create a new subdirectory `subdir1.subdir2.file3.py` and move this 
 # code into it.
 
 #def add(summand1, summand2):
@@ -18,19 +18,19 @@
 # sys.path.insert(0, Path(__file__).parent)
 # print(os.getcwd())
 
-import assignment.subdir1.subdir2.file3
+import subdir1.subdir2.file3
 
 # Now add another `import` statement that imports the same module as `ssf3`
 # Importing the same module twice is not something you would do in real life --
 # it's just for purposes of this exercise.
-import assignment.subdir1.subdir2.file3 as ssf3
-import assignment.subdir1 as subdir1
+import subdir1.subdir2.file3 as ssf3
+import subdir1 as subdir1
 
 # Now use `from` to import `divide` into the global namespace. 
 # Do not import `add` into the global namespace.
-from assignment.subdir1.subdir2.file3 import divide
+from subdir1.subdir2.file3 import divide
 
-# Now create a new subdirectory under `assignment` called `subdir3`. Put a file
+# Now create a new subdirectory under ` called `subdir3`. Put a file
 # called `new_module.py` there. Move the following code into it:
 
 # oh_my = "Oh my!"
@@ -38,4 +38,4 @@ from assignment.subdir1.subdir2.file3 import divide
 # Do not leave it in this file.
 
 # Now import it by name using `from`.
-from assignment.subdir3.new_module import oh_my
+from subdir3.new_module import oh_my
